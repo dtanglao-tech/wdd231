@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Daniel Tanglao Home page for BYU Pathway WDD231">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header-top">
+            <div class="branding">
+                <img src="images/home.svg" alt="Site Logo" width="1" height="1">
+                <span class="site-name">Daniel</span>
+            </div>
+            <button id="ham-btn" class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-bar" aria-expanded="false"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="profile">
+            <div class="card about-card">
+                <h2 class="section-heading">About Me</h2>
+                <p>Hello! I'm Daniel, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis necessitatibus illo harum totam, 
+                    quasi hic voluptate vero, repellat possimus atque ipsa aperiam minima similique beatae deleniti. Consequatur, repellat tenetur!</p>
+            </div>
+            <div class="card photo-card">
+                <h2 class="section-heading">Student Photo</h2>
+                <img src="images/profile.jpg" alt="Photo of Daniel">
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2 class="section-heading">Web Certificate Courses</h2>
+            <div class="courses-toolbar">
+                <div class="filters">
+                    <button type="button" data-filter="all" class="active">All</button>
+                    <button type="button" data-filter="CSE">CSE</button>
+                    <button type="button" data-filter="WDD">WDD</button>
+                </div>
+                <p class="credits-summary">Total credits: <span id="credits"></span></p>
+            </div>
+            <div id="course-cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook icon">
+            </a>
+            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" aria-label="GitHub">
+                <img src="images/github_logo_icon_206752.svg" alt="GitHub icon">
+            </a>
+        </div>
+        <p>© <span id="currentyear"></span> Daniel Tanglao | Philippines.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

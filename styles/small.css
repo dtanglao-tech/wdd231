@@ -169,6 +169,14 @@ section {
     display: block;
 }
 
+.about-card .section-heading,
+.photo-card .section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .photo-card img {
     border-radius: 8px;
     display: block;

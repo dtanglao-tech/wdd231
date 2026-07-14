@@ -6,13 +6,20 @@
     <title>Borongan Chamber of Commerce | Directory</title>
     <meta name="description" content="Browse the Borongan chamber of Commerce business directory.">
     <meta name="author" content="Daniel Tanglao">
+    <meta property="og:title" content="Borongan Chamber Business Directory">
+    <meta property="og:description" content="Discover local businesses and services in the Borongan Chamber of Commerce member directory.">
+    <meta property="og:image" content="https://example.com/chamber/images/logo.svg">
+    <meta property="og:url" content="https://example.com/chamber/directory.html">
+    <meta property="og:type" content="website">
 
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -30,7 +37,7 @@
                 <li><a href="#">Discover</a></li>
             </ul>
 
-            <button class="dark-toggle" arial-label="Toggle dark mode">🌙</button>
+            <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
             <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
                 aria-controls="nav-links">☰</button>
 
@@ -44,6 +51,7 @@
             <button id="list-view">List</button>
         </div>
         <section id="directory">
+            <h2>Member Directory</h2>
             <!-- Business cards will be injected here via JS -->
         </section>
     </main>
@@ -63,7 +71,7 @@
         <p>&copy; <span id="currentyear"></span>Daniel Tanglao | Philippines.</p>
     </footer>
 
-    <script src="js/main.js" defer></script>
-    <script src="js/directory.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </body>
 </html>

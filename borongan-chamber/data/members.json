@@ -1,0 +1,83 @@
+[
+    {
+        "name" : "EMCOR Borongan",
+        "address" : "Real Street, Brgy. Songco, Borongan City, Eastern Samar",
+        "phone" : "(005) 560-0104",
+        "email" : "borongan@emcor.com.ph",
+        "website" : "https://www.emcor.com.ph",
+    "image": "images/logos/emcor.png",
+    "membership": "Gold"
+    },
+    {
+    "name": "HANDYMAN Borongan City Branch",
+    "address": "Borongan City, Eastern Samar",
+    "phone": "(055) 560-0110",
+    "email": "borongan@handyman.com.ph",
+    "website": "https://www.handyman.com.ph",
+    "image": "images/logos/handyman.png",
+    "membership": "Gold"
+    },
+    {
+        "name": "Matthew's Office Supply",
+        "address": "Real Street, Borongan City, Eastern Samar",
+        "phone": "(055) 560-0118",
+        "email": "info@matthewsofficesupply.ph",
+        "website": "",
+        "image": "images/logos/matthews-office-supply.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "3K Marketing",
+        "address": "85 Real Street, Borongan City, Eastern Samar",
+        "phone": "(055) 261-2189",
+        "email": "sales@3kmarketing.ph",
+        "website": "",
+        "image": "images/logos/3k-marketing.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Galacan Construction Services",
+        "address": "49 Santiago Street, Balud II, Borongan City, Eastern Samar",
+        "phone": "(055) 560-1856",
+        "email": "info@galacanconstruction.ph",
+        "website": "",
+        "image": "images/logos/galacan-construction.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Heron Construction",
+        "address": "Purok 2, Brgy. Hindang, Borongan City, Eastern Samar",
+        "phone": "+63 945 855 7997",
+        "email": "office@heronconstruction.ph",
+        "website": "",
+        "image": "images/logos/heron-construction.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Eastern Signage Trading",
+        "address": "Purok Central, Borongan City, Eastern Samar",
+        "phone": "+63 919 734 7684",
+        "email": "easternsignage@gmail.com",
+        "website": "",
+        "image": "images/logos/eastern-signage.png",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Fiesta Gas Eastern Samar - Borongan",
+        "address": "Barangay F, Tarusan, Borongan City, Eastern Samar",
+        "phone": "+63 962 465 1567",
+        "email": "borongan@fiestagas.ph",
+        "website": "",
+        "image": "images/logos/fiesta-gas.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Samar Coco Products Manufacturing Corp.",
+        "address": "Borongan City, Eastern Samar",
+        "phone": "(055) 560-0125",
+        "email": "info@samarcoco.ph",
+        "website": "",
+        "image": "images/logos/samar-coco.png",
+        "membership": "Gold"
+    }
+]

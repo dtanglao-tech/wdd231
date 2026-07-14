@@ -1,0 +1,262 @@
+:root {
+    --accent-dark: #2f3b46;
+    --accent-dark-strong: #202a33;
+    --accent-light: #f5f7fa;
+    --text-dark: #1f2933;
+    --card-border: #dce3ec;
+    --course-bg: #e7edf4;
+    --course-complete-bg: #e2f060;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Global Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--accent-light);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--accent-light);
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: var(--accent-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.25rem 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--course-complete-bg);
+    border-bottom: 2px solid var(--course-complete-bg);
+}
+
+.nav-links a[aria-current="page"] {
+    border-bottom: 2px solid var(--accent-light);
+    font-weight: 600;
+}
+
+.hamburger,
+.dark-toggle {
+    background: none;
+    border: none;
+    color: var(--accent-light);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+.hamburger:hover,
+.dark-toggle:hover {
+    color: var(--course-complete-bg);
+    transform: scale(1.2);
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text .tagline {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Directory */
+#directory.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.member-card {
+    background-color: var(--course-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+}
+
+.member-card.gold {
+    border: 2px solid gold;
+    background: linear-gradient(to bottom, var(--course-complete-bg), #fff);
+}
+
+.member-card.silver {
+    border: 2px solid silver;
+    background: linear-gradient(to bottom, #f0f0f0, #fff);
+}
+
+.member-card.bronze {
+    border: 2px solid #cd7f32;
+    background: linear-gradient(to bottom, #f9e6d0, #fff);
+}
+
+.member-card .tagline {
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--accent-dark);
+}
+
+.member-logo {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+#directory.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#directory.list-view .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#directory.list-view .member-logo {
+    display: none;
+}
+
+/* Toggle Buttons */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.view-toggle button[aria-pressed="true"] {
+    background-color: var(--accent-dark-strong);
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-dark-strong);
+    color: var(--accent-light);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .social {
+    margin-bottom: 0.5rem;
+}
+
+footer .social a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social img {
+    height: 28px;
+    width: 28px;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #directory.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    footer .social {
+        margin-bottom: 0;
+    }
+}
+
+
+/************** Hero banner **************/

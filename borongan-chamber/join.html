@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce | Join</title>
+    <meta name="description" content="Join the Timbuktu Chamber of Commerce and become a member today.">
+    <meta name="author" content="Daniel Tanglao">
+</head>
+<body>
+    <header>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
+                <span class="site-name">Timbuktu chamber of Commerce</span>
+            </div>
+            <button class="dark-toggle" arial-label="Toggle dark mode">🌙</button>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="navlinks">☰</button>
+    
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+        <form id="membership-form">
+            <label for="firstName">first Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="LastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="title">Organization Title</label>
+            <input type="text" id="title" name="title">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" name="businessName" required>
+
+            <label for="membershiplevel">Membership Level</label>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="">Select a level</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+            </select>
+
+            <label for="description">Business Description</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <select id="membership-cards">
+            <!-- Membership cards with modal dialogs will go here -->
+        </select>
+    </main>
+
+    <footer>
+        <!-- Global Footer -->
+    </footer>
+</body>
+</html>

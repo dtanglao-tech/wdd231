@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borongan Chamber of Commerce | Directory</title>
+    <meta name="description" content="Browse the Borongan chamber of Commerce business directory.">
+    <meta name="author" content="Daniel Tanglao">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
+                <span class="site-name">Borongan Directory</span>
+            </div>
+            
+            <ul id="nav-links" class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+
+            <button class="dark-toggle" arial-label="Toggle dark mode">🌙</button>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navlinks">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        <div class="view-toggle">
+            <button id="grid-view">Grid</button>
+            <button id="list-view">List</button>
+        </div>
+        <section id="directory">
+            <!-- Business cards will be injected here via JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" aria-label="Github">
+                <img src="images/github_logo_icon_206752.svg" alt="">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span>Daniel Tanglao | Philippines.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/directory.js" defer></script>
+</body>
+</html>

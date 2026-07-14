@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/dark.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,9 +30,8 @@
                     <span class="site-name">Timbuktu chamber of Commerce</span>
                 </div>
 <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
-                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
-                    aria-controls="navlinks">☰</button>
-        
+                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="nav-links">☰</button>
                 <ul id="nav-links" class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html" aria-current="page">Discover</a></li>

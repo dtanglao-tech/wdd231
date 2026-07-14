@@ -4,6 +4,15 @@
         flex-direction: row;
         background: none;
         padding: 0;
+        max-height: none;
+        opacity: 1;
+        transform: none;
+        gap: clamp(1rem, 1.5vw, 2rem);
+        width: auto;
+    }
+
+    .nav-links.open {
+        max-height: none;
     }
 
     .hamburger {

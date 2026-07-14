@@ -5,8 +5,8 @@
         "phone" : "(005) 560-0104",
         "email" : "borongan@emcor.com.ph",
         "website" : "https://www.emcor.com.ph",
-    "image": "images/logos/emcor.png",
-    "membership": "Gold"
+        "image": "images/emcor.webp",
+        "membership": "Gold"
     },
     {
     "name": "HANDYMAN Borongan City Branch",
@@ -14,7 +14,7 @@
     "phone": "(055) 560-0110",
     "email": "borongan@handyman.com.ph",
     "website": "https://www.handyman.com.ph",
-    "image": "images/logos/handyman.png",
+    "image": "images/handyman.webp",
     "membership": "Gold"
     },
     {
@@ -23,7 +23,7 @@
         "phone": "(055) 560-0118",
         "email": "info@matthewsofficesupply.ph",
         "website": "",
-        "image": "images/logos/matthews-office-supply.png",
+        "image": "images/matthews.webp",
         "membership": "Silver"
     },
     {
@@ -32,7 +32,7 @@
         "phone": "(055) 261-2189",
         "email": "sales@3kmarketing.ph",
         "website": "",
-        "image": "images/logos/3k-marketing.png",
+        "image": "images/3k-marketing.webp",
         "membership": "Gold"
     },
     {
@@ -41,7 +41,7 @@
         "phone": "(055) 560-1856",
         "email": "info@galacanconstruction.ph",
         "website": "",
-        "image": "images/logos/galacan-construction.png",
+        "image": "images/galacan.webp",
         "membership": "Gold"
     },
     {
@@ -50,7 +50,7 @@
         "phone": "+63 945 855 7997",
         "email": "office@heronconstruction.ph",
         "website": "",
-        "image": "images/logos/heron-construction.png",
+        "image": "images/heron.webp",
         "membership": "Silver"
     },
     {
@@ -59,7 +59,7 @@
         "phone": "+63 919 734 7684",
         "email": "easternsignage@gmail.com",
         "website": "",
-        "image": "images/logos/eastern-signage.png",
+        "image": "images/signage.webp",
         "membership": "Bronze"
     },
     {
@@ -68,7 +68,7 @@
         "phone": "+63 962 465 1567",
         "email": "borongan@fiestagas.ph",
         "website": "",
-        "image": "images/logos/fiesta-gas.png",
+        "image": "images/fiesta-gas.webp",
         "membership": "Silver"
     },
     {
@@ -77,7 +77,7 @@
         "phone": "(055) 560-0125",
         "email": "info@samarcoco.ph",
         "website": "",
-        "image": "images/logos/samar-coco.png",
+        "image": "images/coco.webp",
         "membership": "Gold"
     }
 ]

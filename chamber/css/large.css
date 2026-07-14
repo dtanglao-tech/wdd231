@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .member-logo {
+        width: 150px;
+    }
+
+    #directory.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    footer .social {
+        margin-bottom: 0;
+    }
+}

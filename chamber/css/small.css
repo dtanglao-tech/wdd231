@@ -9,7 +9,7 @@
     --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Global Reset & Typography */
+/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -55,10 +55,17 @@ header {
 .nav-links {
     list-style: none;
     display: none;
+    flex-direction: column;
+    background-color: var(--accent-dark);
+    padding: 1rem;
+}
+
+.nav-links.open {
+    display: flex;
 }
 
 .nav-links li {
-    margin-left: 1rem;
+    margin: 0.5rem 0;
 }
 
 .nav-links a {
@@ -76,7 +83,6 @@ header {
 
 .nav-links a[aria-current="page"] {
     border-bottom: 2px solid var(--accent-light);
-    font-weight: 600;
 }
 
 .hamburger,
@@ -88,7 +94,6 @@ header {
     cursor: pointer;
 }
 
-
 .hamburger:hover,
 .dark-toggle:hover {
     color: var(--course-complete-bg);
@@ -96,7 +101,7 @@ header {
     transition: transform 0.2s ease, color 0.3s ease;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     background-color: var(--accent-dark);
     color: var(--accent-light);
@@ -163,8 +168,11 @@ header {
 }
 
 .member-logo {
-    max-width: 100px;
-    margin-bottom: 0.5rem;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 0.5rem;
+    display: block;
+    object-fit: contain;
 }
 
 #directory.list-view {
@@ -231,32 +239,5 @@ footer .social img {
 footer p {
     margin: 0.25rem 0;
 }
-
-/* Responsive Layout */
-@media (min-width: 768px) {
-    .nav-links {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    #directory.grid-view {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-
-    footer .social {
-        margin-bottom: 0;
-    }
-}
-
 
 /************** Hero banner **************/

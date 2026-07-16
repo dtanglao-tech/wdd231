@@ -89,11 +89,11 @@ header {
 
 .nav-links a:hover {
     color: var(--course-complete-bg);
-    border-bottom: 2px solid var(--course-complete-bg);
 }
 
 .nav-links a[aria-current="page"] {
-    border-bottom: 2px solid var(--accent-light);
+    border-bottom: 2px solid var(--course-complete-bg);
+    color: var(--course-complete-bg);
 }
 
 .hamburger,

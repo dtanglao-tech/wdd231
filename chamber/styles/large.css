@@ -15,6 +15,11 @@
         max-height: none;
     }
 
+    .nav-links a[aria-current="page"] {
+        border-bottom: 2px solid var(--course-complete-bg);
+        color: var(--course-complete-bg);
+    }
+
     .hamburger {
         display: none;
     }

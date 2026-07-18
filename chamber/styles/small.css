@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
     --accent-dark: #2f3b46;
     --accent-dark-strong: #202a33;
@@ -25,66 +26,75 @@ body {
 
 /* Header */
 header {
-    background-color: var(--accent-dark);
+    background: var(--accent-dark);
     color: var(--accent-light);
-    padding: 1rem;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.nav-left {
+.nav-brand {
     display: flex;
     align-items: center;
+    gap: .75rem;
 }
 
 .logo {
-    height: 40px;
-    margin-right: 0.5rem;
+    width: 60px;
+    height: auto;
 }
 
 .site-name {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--accent-light);
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.dark-toggle,
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--accent-light);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
 .nav-links {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: var(--accent-dark);
-    padding: 0;
-    gap: 0.75rem;
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
-    transform: translateY(-0.2rem);
-    transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease;
+    transition: max-height .3s ease;
+    background: var(--accent-dark);
 }
 
 .nav-links.open {
-    max-height: 480px;
-    opacity: 1;
-    padding: 1rem;
-    transform: translateY(0);
+    max-height: 400px;
 }
 
 .nav-links li {
-    margin: 0;
+    padding: .75rem 0;
 }
 
 .nav-links a {
     color: var(--accent-light);
     text-decoration: none;
-    font-weight: 600;
-    padding: 0.25rem 0;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
 }
 
 .nav-links a:hover {
@@ -92,24 +102,8 @@ header {
 }
 
 .nav-links a[aria-current="page"] {
+    color: var(--course-complete-bg);
     border-bottom: 2px solid var(--course-complete-bg);
-    color: var(--course-complete-bg);
-}
-
-.hamburger,
-.dark-toggle {
-    background: none;
-    border: none;
-    color: var(--accent-light);
-    font-size: 1.25rem;
-    cursor: pointer;
-}
-
-.hamburger:hover,
-.dark-toggle:hover {
-    color: var(--course-complete-bg);
-    transform: scale(1.2);
-    transition: transform 0.2s ease, color 0.3s ease;
 }
 
 /* Hero */
@@ -126,6 +120,7 @@ header {
 }
 
 .hero-text h1 {
+    margin: 1rem;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -143,6 +138,12 @@ header {
     padding: 1rem;
 }
 
+.view-toggle button:hover,
+.view-toggle button:focus-visible {
+    background-color: var(--accent-dark-strong);
+
+}
+
 .member-card {
     background-color: var(--course-bg);
     border: 1px solid var(--card-border);
@@ -150,7 +151,7 @@ header {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease, box-shadow .25s ease;
 }
 
 .member-card:hover {
@@ -206,7 +207,7 @@ header {
 .view-toggle {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .view-toggle button {
@@ -228,27 +229,63 @@ header {
 footer {
     background-color: var(--accent-dark-strong);
     color: var(--accent-light);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
 }
 
-footer .social {
-    margin-bottom: 0.5rem;
+.footer-contact,
+.footer-social,
+.footer-info {
+    width: 100%;
+    max-width: 320px;
 }
 
-footer .social a {
-    margin: 0 0.5rem;
-    display: inline-block;
+.footer-contact h2 {
+    margin-bottom: .75rem;
+    font-size: 1.2rem;
 }
 
-footer .social img {
-    height: 28px;
-    width: 28px;
+.footer-contact p {
+    margin: .35rem 0;
 }
 
-footer p {
-    margin: 0.25rem 0;
+.footer-contact a {
+    color: var(--accent-light);
+    text-decoration: none;
 }
 
-/************** Hero banner **************/
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-social img {
+    width: 42px;
+    height: 42px;
+    transition: .25s;
+    filter: invert(1);
+}
+
+.footer-social img:hover,
+.footer-social img:focus {
+    transform: scale(1.2);
+}
+
+.footer-info {
+    align-items: center;
+    text-align: center;
+    gap: .2rem;
+}
+
+.footer-info p {
+    margin: .15rem 0;
+}

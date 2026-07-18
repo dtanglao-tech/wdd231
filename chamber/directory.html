@@ -9,17 +9,19 @@
     <meta property="og:title" content="Borongan Chamber Business Directory">
     <meta property="og:description" content="Discover local businesses and services in the Borongan Chamber of Commerce member directory.">
     <meta property="og:image" content="https://dtanglao-tech.github.io/wdd231/chamber/images/logo.svg">
-    <meta property="og:url" content="https://dtanglao-tech.com/chamber/directory.html">
+    <meta property="og:url" content="https://dtanglao-tech.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
     <script src="scripts/main.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
@@ -28,9 +30,15 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-left">
-                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="Borongan Chamber of Commerce Logo" class="logo">
                 <span class="site-name">Borongan Directory</span>
+            </div>
+            
+            <div class="nav-controls"> 
+                <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-links">☰</button>
             </div>
             
             <ul id="nav-links" class="nav-links">
@@ -39,11 +47,6 @@
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
-
-            <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
-            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
-                aria-controls="nav-links">☰</button>
-
         </nav>
     </header>
 
@@ -60,18 +63,42 @@
     </main>
 
     <footer>
-        <div class="social">
-            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" aria-label="Facebook">
+        <div class="footer-contact">
+            <h2>Borongan Chamber of Commerce</h2>
+            <p>Cinco Street</p>
+            <p>Borongan City, Eastern Samar</p>
+            <p>
+                <a href="mailto:daniel.tanglao18@gmail.com">
+                    daniel.tanglao18@gmail.com
+                </a>
+            </p>
+            <p>(+63) 927 174 0069</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/danyelgwaps2" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="Facebook">
                 <img src="images/facebook.svg" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/danyel181/" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="">
             </a>
-            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" aria-label="Github">
+            <a href="https://github.com/dtanglao-tech/wdd231" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="Github">
                 <img src="images/github_logo_icon_206752.svg" alt="">
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span>Daniel Tanglao | Philippines.</p>
+
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daniel Tanglao</p>
+            <p>&copy; <span id="currentyear"></span> Borongan Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 
 </body>

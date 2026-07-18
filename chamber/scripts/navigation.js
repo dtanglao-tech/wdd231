@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("open", isOpen);
     };
 
+    setMenuState(false);
+
     hamBtn.addEventListener("click", () => {
         const expanded = hamBtn.getAttribute("aria-expanded") === "true";
         setMenuState(!expanded);
@@ -21,4 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
             setMenuState(false);
         }
     });
+
+    window.addEventlistener("resize", () => {
+        if (window.innerWidth >= 768) {
+            setMenuState(false);
+        }
+    })
+
 });

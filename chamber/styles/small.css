@@ -66,7 +66,15 @@ header {
     border: none;
     color: var(--accent-light);
     font-size: 1.6rem;
+    transition: transform 0.25s ease,
+                color 0.25s ease;
     cursor: pointer;
+}
+
+.hamburger:hover,
+.hamburger:focus-visible {
+    color: var(--course-complete-bg);
+    transform: scale(1.2);
 }
 
 /* MOBILE NAVIGATION */

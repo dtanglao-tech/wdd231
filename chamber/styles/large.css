@@ -47,6 +47,10 @@
         display: block;
     }
 
+    .dark-toggle:hover {
+        transform: scale(1.5) rotate(20deg);
+    }
+
     .member-logo {
         width: 150px;
     }

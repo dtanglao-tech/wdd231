@@ -27,7 +27,7 @@ function renderMembers(members) {
 
     members.forEach(member => {
         const card = document.createElement("article");
-        card.classList.add("member-card");
+        card.classList.add("member-card", "directory-card");
 
         if (member.membership) {
             const membershipClass = member.membership
@@ -43,7 +43,7 @@ function renderMembers(members) {
                 : "";
 
         card.innerHTML = `
-            <img src="${member.image}" alt="Logo of ${member.name}" class="member-logo">
+            <img src="${member.image}" alt="Logo of ${member.name}" class="member-logo" loading="lazy">
             <h2>${member.name}</h2>
             <p class="tagline">${member.membership} Member</p>
             <p>Email: <a href="mailto:${member.email}">${member.email}</a></p>

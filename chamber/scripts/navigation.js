@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    window.addEventlistener("resize", () => {
+    window.addEventListener("resize", () => {
         if (window.innerWidth >= 768) {
             setMenuState(false);
         }

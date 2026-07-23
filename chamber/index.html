@@ -4,75 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce | Home Page</title>
-    <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce. Supporting local businesses and community growth.">
+    <title>Borongan Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Borongan Chamber of Commerce homepage.">
     <meta name="author" content="Daniel Tanglao">
-    <meta property="og:title" content="Timbuktu Chamber of Commerce Home">
-    <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce website, featuring local business resources and member services.">
-    <meta property="og:image" content="https://example.com/chamber/images/logo.svg">
-    <meta property="og:url" content="https://example.com/chamber/index.html">
+    <meta property="og:title" content="Borongan Chamber of Commerce Home">
+    <meta property="og:description" content="Welcome to the Borongan of Commerce. Discover local businesses, events, and member services.">
+    <meta property="og:image" content="https://dtanglao-tech.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://dtanglao-tech.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/dark.css">
 
     <script src="scripts/main.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-left">
-                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
-                <span class="site-name">Timbuktu chamber of Commerce</span>
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="Borongan Chamber of Commerce Logo" class="logo">
+                <span class="site-name">Borongan Home Page</span>
+            </div>
+            
+            <div class="nav-controls"> 
+                <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-links">☰</button>
             </div>
             
             <ul id="nav-links" class="nav-links">
-                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="/chamber/index.html" aria-current="page">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
             </ul>
-            
-            <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
-            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
         </nav>
     </header>
 
     <main>
-        <h1>Welcome to the Timbuktu Chamber of Commerce</h1>
-        <section>
-            <p>Placeholder text for mission statement.</p>
+        <section class="hero">
+            <div class="hero-visual">
+                <img src="images/hero.svg" alt="Borongan Chamber of Commerce" class="hero-image">
+                <div class="hero-text">
+                    <h1>Borongan Chamber of Commerce</h1>
+                    <p class="tagline">Connecting businesses, fostering growth, and building community in Eastern Samar.</p>
+                    <a href="join.html" class="cta-button">Join the Chamber</a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Highlights</h2>
-            <p>Placeholder for featured events or businesses.</p>
-        </section>
+        <div class="home-content">
+            <!--current events-->
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <article>
+                    <h3>Upcoming Business Forum</h3>
+                    <p>Date: August 15, 2026</p>
+                    <p>Join us for a discussion on local business growth and networking opportunities.</p>
+                </article>
+
+                <article>
+                    <h3>Community Outreach Program</h3>
+                    <p>Date: September 5, 2026</p>
+                    <p>Chamber members will participate in a city-wide volunteer initiative.</p>
+                </article>
+            </section>
+
+            <!--weather-->
+            <section class="weather">
+                <h2>Local Weather</h2>
+                <div id="weather-info">
+                    <!-- JS will inject current temp, description, and 3-day forecast -->
+                </div>
+            </section>
+
+            <!--spotlights-->
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container">
+                    <!-- JS will inject 2–3 random Gold/Silver members -->
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <div class="social">
-            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" aria-label="Facebook">
+        <div class="footer-contact">
+            <h2>Borongan Chamber of Commerce</h2>
+            <p>Cinco Street</p>
+            <p>Borongan City, Eastern Samar</p>
+            <p>
+                <a href="mailto:daniel.tanglao18@gmail.com">
+                    daniel.tanglao18@gmail.com
+                </a>
+            </p>
+            <p>(+63) 927 174 0069</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/danyelgwaps2" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="Facebook">
                 <img src="images/facebook.svg" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/danyel181/" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="">
             </a>
-            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" aria-label="Github">
+            <a href="https://github.com/dtanglao-tech/wdd231" 
+                target="_blank" rel="noopener noreferrer" 
+                aria-label="Github">
                 <img src="images/github_logo_icon_206752.svg" alt="">
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span>Daniel Tanglao | Philippines.</p>
+
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daniel Tanglao</p>
+            <p>&copy; <span id="currentyear"></span> Borongan Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 
 

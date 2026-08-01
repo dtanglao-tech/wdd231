@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/dark.css">
 
     <script type="module" src="scripts/join.mjs"></script>
     <script type="module" src="scripts/main.mjs"></script>
@@ -86,7 +85,7 @@
                                 name="organizationtitle"
                                 title="Enter your organization title"
                                 autocomplete="organization-title"
-                                pattern="[A-Za-z][A-Za-z -]{6,}">
+                                pattern="^[A-Za-z][A-Za-z -]{6,}$">
                         </label>
 
                         <label>
@@ -102,7 +101,7 @@
 
                         <label>
                             Mobile Phone
-                            <input type="text"
+                            <input type="tel"
                                 id="phone"
                                 name="phone"
                                 required

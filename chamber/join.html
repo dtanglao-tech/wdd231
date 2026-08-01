@@ -3,85 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce | Join</title>
-    <meta name="description" content="Join the Timbuktu Chamber of Commerce and become a member today.">
+    <title>Join | Borongan Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Borongan Chamber of Commerce Join page.">
     <meta name="author" content="Daniel Tanglao">
-    <meta property="og:title" content="Join the Timbuktu Chamber of Commerce">
-    <meta property="og:description" content="Submit your membership request and join the Borongan Chamber of Commerce community today.">
-    <meta property="og:image" content="https://example.com/chamber/images/logo.svg">
-    <meta property="og:url" content="https://example.com/chamber/join.html">
+    <meta property="og:title" content="Borongan Chamber of Commerce Home">
+    <meta property="og:description"
+        content="Welcome to the Borongan of Commerce. Discover local businesses, events, and member services.">
+    <meta property="og:image" content="https://dtanglao-tech.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://dtanglao-tech.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/dark.css">
-    <script src="scripts/navigation.js" defer></script>
+
+    <script type="module" src="scripts/join.mjs"></script>
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+    
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-left">
-                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
-                <span class="site-name">Timbuktu chamber of Commerce</span>
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="Borongan Chamber of Commerce Logo" class="logo">
+                <span class="site-name">Join the Chamber</span>
             </div>
-            <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
-            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
-                aria-controls="nav-links">☰</button>
+    
+            <div class="nav-controls">
+                <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="nav-links">☰</button>
+            </div>
     
             <ul id="nav-links" class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html" aria-current="page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="join-page">
         <h1>Join the Chamber</h1>
-        <form id="membership-form">
-            <label for="firstName">first Name</label>
-            <input type="text" id="firstName" name="firstName" required>
+        <div class="join-container">
+            <div class="form-column">
+                <h2>Membership Application Form</h2>
+                <section class="application-form">
 
-            <label for="LastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
+                    <form method="get" action="thankyou.html">
+                        <label>
+                            First Name
+                            <input type="text" 
+                                id="first-name" 
+                                name="firstname" 
+                                required 
+                                title="Enter your first name" 
+                                autocomplete="given-name">
+                        </label>
 
-            <label for="title">Organization Title</label>
-            <input type="text" id="title" name="title">
+                        <label>
+                            Last Name
+                            <input type="text"
+                                id="last-name"
+                                name="lastname"
+                                required
+                                title="Enter your last name"
+                                autocomplete="family-name">
+                        </label>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+                        <label>
+                            Organization Title
+                            <input type="text"
+                                id="organization-title"
+                                name="organizationtitle"
+                                title="Enter your organization title"
+                                autocomplete="organization-title"
+                                pattern="[A-Za-z][A-Za-z -]{6,}">
+                        </label>
 
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
+                        <label>
+                            Email
+                            <input type="email"
+                                id="email"
+                                name="email"
+                                required
+                                title="Enter your Email address"
+                                autocomplete="email"
+                                placeholder="example@email.com">
+                        </label>
 
-            <label for="businessName">Business Name</label>
-            <input type="text" id="businessName" name="businessName" required>
+                        <label>
+                            Mobile Phone
+                            <input type="text"
+                                id="phone"
+                                name="phone"
+                                required
+                                title="Enter your mobile number"
+                                autocomplete="tel">
+                        </label>
 
-            <label for="membershiplevel">Membership Level</label>
-            <select id="membershipLevel" name="membershipLevel" required>
-                <option value="">Select a level</option>
-                <option value="gold">Gold</option>
-                <option value="silver">Silver</option>
-                <option value="bronze">Bronze</option>
-            </select>
+                        <label>
+                            Organization Name
+                            <input type="text"
+                                id="organization"
+                                name="organization"
+                                required
+                                title="Enter your organization name"
+                                autocomplete="organization">
+                        </label>
 
-            <label for="description">Business Description</label>
-            <textarea id="description" name="description"></textarea>
+                        <label>
+                            Business Description
+                            <textarea id="description"
+                            name="description"
+                            title="Description your organization"
+                            rows="5"></textarea>
+                        </label>
+                        
+                        <fieldset  class="membership-options">
+                            <legend>Membership Level</legend>
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="np" required>
+                                NP Membership
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="bronze">
+                                Bronze Membership
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="silver">
+                                Silver Membership
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="membership" value="gold">
+                                Gold Membership
+                            </label>
+                        </fieldset>
 
-            <button type="submit">Submit</button>
-        </form>
+                        <input type="hidden"
+                            id="timestamp"
+                            name="timestamp">
 
-        <select id="membership-cards">
-            <!-- Membership cards with modal dialogs will go here -->
-        </select>
+                        <input type="submit" value="Apply for Membership">
+                    </form>
+                </section>
+            </div>       
+
+            <div class="membership-column">
+                <h2>Membership Levels</h2>
+                
+                <aside class="membership-levels">
+                    <article class="membership-card">
+                        <h3>Non Profit Membership Level</h3>
+                        <button type="button" data-dialog="np-dialog">Learn More</button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership Level</h3>
+                        <button type="button" data-dialog="bronze-dialog">Learn More</button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership Level</h3>
+                        <button type="button" data-dialog="silver-dialog">Learn More</button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Golden Membership Level</h3>
+                        <button type="button" data-dialog="gold-dialog">Learn More</button>
+                    </article>
+                </aside>
+            </div>
+        </div>
     </main>
 
+    <dialog id="np-dialog" class="membership-dialog">
+        <div class="dialog-header">
+            <h2>Non Profit Membership Level</h2>
+            <button type="button" class="close-dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <hr>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>No Membership fee</li>
+            <li>Networking opportunities</li>
+            <li>Community event invitations</li>
+        </ul>
+
+        <p><strong>Cost:</strong> Annual Fee</p>
+    </dialog>
+
+    <dialog id="bronze-dialog" class="membership-dialog">
+        <div class="dialog-header">
+            <h2>Bronze Membership Level</h2>
+            <button type="button" class="close-dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <hr>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Everything in NP Membership</li>
+            <li>Business listing in the directory</li>
+            <li>Monthly networking events</li>
+        </ul>
+
+        <p><strong>Cost:</strong> $100/year</p>
+    </dialog>
+
+    <dialog id="silver-dialog" class="membership-dialog">
+        <div class="dialog-header">
+            <h2>Silver Membership Level</h2>
+            <button type="button" class="close-dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <hr>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Everything in Bronze Membership</li>
+            <li>Advertising opportunities</li>
+            <li>Training workshops</li>
+            <li>Event discounts</li>
+        </ul>
+
+        <p><strong>Cost:</strong> $250/year</p>
+    </dialog>
+
+    <dialog id="gold-dialog" class="membership-dialog">
+        <div class="dialog-header">
+            <h2>Golden Membership Level</h2>
+            <button type="button" class="close-dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <hr>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Everything in Silver Membership</li>
+            <li>Homepage spotlight advertising</li>
+            <li>Premium event discounts</li>
+            <li>Priority business promotion</li>
+        </ul>
+
+        <p><strong>Cost:</strong> $500/year</p>
+    </dialog>
+
     <footer>
-        <!-- Global Footer -->
+        <div class="footer-contact">
+            <h2>Borongan Chamber of Commerce</h2>
+            <p>Cinco Street</p>
+            <p>Borongan City, Eastern Samar</p>
+            <p>
+                <a href="mailto:daniel.tanglao18@gmail.com">
+                    daniel.tanglao18@gmail.com
+                </a>
+            </p>
+            <p>(+63) 927 174 0069</p>
+        </div>
+    
+        <div class="footer-social">
+            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                <img src="images/github_logo_icon_206752.svg" alt="">
+            </a>
+        </div>
+    
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daniel Tanglao</p>
+            <p>&copy; <span id="currentyear"></span> Borongan Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 </html>

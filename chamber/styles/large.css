@@ -138,6 +138,24 @@
         gap: 2rem;
     }
 
+    /******************** JOIN PAGE ********************/
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .form-column,
+    .membership-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /******************** THANK YOU PAGE ********************/
+    .thankyou-card {
+        padding: 3rem;
+    }
 
     /** footer**/
     footer {

@@ -1,0 +1,49 @@
+@media only screen and (min-width: 40rem) {
+
+    .discover-grid {
+        display: grid;
+        gap: 1.5rem;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas:
+            "card1 card1 card2"
+            "card3 card4 card2"
+            "card5 card6 card7"
+            "card8 card8 card7";
+    }
+
+    #allplaces .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    #allplaces .card img {
+        transition: 
+            transform .35s ease,
+            filter .35s ease;
+    }
+
+    #allplaces .card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1);
+    }
+    /* #allplaces .card {
+        
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas: 
+            "image title"
+            "image description"
+            "image address"
+            "image button";
+        
+        align-items: start;
+    }
+    
+    #allplaces .card img {
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    } */
+}

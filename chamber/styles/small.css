@@ -347,7 +347,100 @@ header {
     display: block;
     object-fit: contain;
     background-color: var(--accent-light);
+} 
+
+/******************** Discover ********************/
+.discover-page {
+    padding: 1rem;
 }
+
+.visitor-message {
+    background: var(--course-bg);
+    border-left: 5px solid var(--accent-dark);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+#visit-message {
+    margin: 0;
+    font-weight: 500;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#allplaces .card {
+    background: var(--accent-light);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column; 
+    transition: 
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+#allplaces .card h2 {
+    margin: 1rem;
+    color: var(--accent-dark);
+    font-size: 1.3rem;
+}
+
+#allplaces .card figure {
+    margin: 0;
+}
+
+#allplaces .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+}
+
+#allplaces .card p {
+    margin: 0 1rem 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+#allplaces .card address {
+    margin: 0 1rem 1rem;
+    font-style: normal;
+    color: var(--accent-dark-strong);
+    font-size: .95rem;
+}
+
+#allplaces .card button{
+    margin: 0 1rem 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent-dark);
+    color: var(--accent-light);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+#allplaces .card button:hover {
+    background: var(--accent-dark-strong);
+}
+
+.card1 {grid-area: card1;}
+.card2 {grid-area: card2;}
+.card3 {grid-area: card3;}
+.card4 {grid-area: card4;}
+.card5 {grid-area: card5;}
+.card6 {grid-area: card6;}
+.card7 {grid-area: card7;}
+.card8 {grid-area: card8;}
 
 /******************** Directory ********************/
 #directory.list-view {

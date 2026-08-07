@@ -3,70 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borongan Chamber of Commerce | Discover</title>
-    <meta name="description" content="Discover Timbuktu: History, demographics, and attractions.">
+    <title>Discover | Borongan Chamber of Commerce</title>
+    <meta name="description" content="Discover Borongan: History, demographics, and attractions.">
     <meta name="author" content="Daniel Tanglao">
     <meta property="og:title" content="Discover Borongan Chamber Destinations">
     <meta property="og:description" content="Learn about the destinations, culture, and local history connected to the Borongan Chamber of Commerce.">
-    <meta property="og:image" content="https://example.com/chamber/images/logo.svg">
-    <meta property="og:url" content="https://example.com/chamber/discover.html">
+    <meta property="og:image" content="https://dtanglao-tech.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://dtanglao-tech.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/dark.css">
-    <script src="scripts/navigation.js" defer></script>
+
+    <script type="module" src="scripts/discover.js"></script>
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-left">
-                    <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" class="logo">
-                    <span class="site-name">Timbuktu chamber of Commerce</span>
-                </div>
-<button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="Borongan Chamber of Commerce Logo" class="logo">
+                <span class="site-name">Discover Borongan</span>
+            </div>
+    
+            <div class="nav-controls">
+                <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
                 <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"
                     aria-controls="nav-links">☰</button>
-                <ul id="nav-links" class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html" aria-current="page">Discover</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                </ul>
-            </nav>
-        </header>
+            </div>
+    
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-    <h1>Discover Timbuktu</h1>
-    <section>
-        <h2>History</h2>
-        <p>Placeholder text for demographics and culture.</p>
-    </section>
-    <section>
-        <h2>Attractions</h2>
-        <p>Placeholder text for local attractions.</p>
-    </section>
-    <main>
 
+    <main class="discover-page">
+        <h1>Discover Borongan</h1>
+
+        <section class="visitor-message" aria-live="polite">
+            <p id="visit-message"></p>
+        </section>
+        <section id="allplaces" class="discover-grid">
+            <!-- JavaScript will generate the cards here -->
+        </section>
     </main>
 
     <footer>
-        <div class="social">
-            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" aria-label="Facebook">
+        <div class="footer-contact">
+            <h2>Borongan Chamber of Commerce</h2>
+            <p>Cinco Street</p>
+            <p>Borongan City, Eastern Samar</p>
+            <p>
+                <a href="mailto:daniel.tanglao18@gmail.com">
+                    daniel.tanglao18@gmail.com
+                </a>
+            </p>
+            <p>(+63) 927 174 0069</p>
+        </div>
+    
+        <div class="footer-social">
+            <a href="https://www.facebook.com/danyelgwaps2" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <img src="images/facebook.svg" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/danyel181/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="">
             </a>
-            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" aria-label="Github">
+            <a href="https://github.com/dtanglao-tech/wdd231" target="_blank" rel="noopener noreferrer" aria-label="Github">
                 <img src="images/github_logo_icon_206752.svg" alt="">
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span>Daniel Tanglao | Philippines.</p>
+    
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Daniel Tanglao</p>
+            <p>&copy; <span id="currentyear"></span> Borongan Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 
 </body>

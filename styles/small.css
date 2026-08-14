@@ -229,7 +229,7 @@ section {
 .filters button:focus {
     background-color: var(--filter-hover-bg);
     color: var(--filter-hover-text);
-    border-color: var(--filter-hover-bg);
+    border-color: transparent;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -237,7 +237,7 @@ section {
 .filters button.active {
     background-color: var(--filter-hover-bg);
     color: var(--filter-hover-text);
-    border-color: var(--filter-hover-bg);
+    border-color: transparent;
 }
 
 .credits-summary {

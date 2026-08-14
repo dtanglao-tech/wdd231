@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore CellFix Pro cellphone repair services including screen replacement, battery repair, water damage repair, and more.">
+    <meta name="author" content="Daniel Tanglao">
+
+    <meta property="og:description" content="Explore professional cellphone repair services from CellFix Pro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/finalproject/services.html">
+    <meta property="og:image" content="images/hero-phone.webp">
+    <title>Repair Services | CellFix Pro</title>
+
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/modal.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo" href="index.html" aria-label="CellFix Pro Home">
+                <span class="logo-icon" aria-hidden="true">📱</span>
+                <span>CellFix Pro</span>
+            </a>
+    
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+    
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+    
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="active" aria-current="page">Services</a>
+                    </li>
+                    <li>
+                        <a href="booking.html">Book Repair</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <a class="header-phone" href="#" aria-label="Call CellFix Pro">☎<span>Call Us</span></a>
+        </div>
+    </header>
+
+
+
+    <main class="services-page">
+        <section class="page-header" aria-labelledby="services-title">
+            <div class="container services-intro">
+                <p class="eyebrow">Professional Repairs</p>
+                <h1 id="services-title">Cellphone Repair Services</h1>
+                <p>
+                    Find the right repair for your device. Browse our services, compare estimated repair times and prices, and save your favorites for later.
+                </p>
+            </div>
+        </section>
+
+        <section class="services-section section-container" aria-labelledby="service-list-title">
+            <div class="container">
+                <div class="services-controls">
+                    <div class="search-group">
+                        <label for="service-search">Search Services</label>
+                        <input type="search" id="service-search" name="service-search" placeholder="Search by service, category, or repair time..." autocomplete="off">   
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="service-filter">Filter Service</label>
+
+                        <select name="service-filter" id="service-filter">
+                            <option value="all">All Services</option>
+                            <option value="Screen Repairs">Screen Repairs</option>
+                            <option value="Battery Repairs">Battery Repairs</option>
+                            <option value="Hardware Repairs">Hardware Repairs</option>
+                            <option value="Software Repairs">Software Repairs</option>
+                            <option value="Water Damage">Water Damage</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="services-heading"> 
+                    <div>
+                        <p class="eyebrow">Available Services</p>
+                        <h2 id="service-list-title">Choose your repair</h2>
+                    </div>
+
+                    <p id="favorite-count" class="favorite" aria-live="polite">Favorites: 0</p>
+                </div>
+
+                <div id="services-status" class="services-status" role="status" aria-live="polite">Loading repair services...</div>
+                <div id="services-container" class="services-grid"><!--JavaScript service card--></div>
+
+                <p id="no-results" class="no-results" hidden>No repair services match your search. Try another search or category</p>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="service-modal" class="service-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" type="button" aria-label="Close service details">&times;</button>
+
+            <div id="modal-image-container" class="modal-image">
+                <!--Image inserted by JavaScript-->
+            </div>
+
+            <div class="modal-body">
+                <span id="modal-category" class="service-category"></span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+
+                <dl class="modal-details">
+                    <div>
+                        <dt>Repair Time</dt><dd id="modal-time"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Estimated Price</dt><dd id="modal-price"></dd>
+                    </div>
+                </dl>
+
+                <a id="modal-book-button" class="button button-primary" href="booking.html">Book This Repair</a>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <span class="logo-icon" aria-hidden="true">📱</span>CellFix Pro
+                </a>
+                <p>Fast. Reliable. Affordable Cellphone Repairs</p>
+            </div>
+    
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Book Repair</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-demo">
+                <h2>Project Demo</h2>
+                <p>View the JavaScript Functionality demonstration.</p>
+                <a href="#" aria-label="Watch CellFix Pro project demonstration">Video Demonstration</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>CellFix Pro. All rights reserved.</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="script/fetch.js"></script>
+    <script type="module" src="script/services.js"></script>
+    <script type="module" src="script/modal.js"></script>
+
+</body>
+</html>

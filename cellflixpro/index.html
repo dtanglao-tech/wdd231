@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CellFix Pro provides fast, reliable, and affordable cellphone repair services, including screen, battery, charging port, camera, and water damage repairs.">
+    <meta name="author" content="Daniel Tanglao">
+
+    <meta property:"og:title" content="CellFix Pro | Cellphone Repair Shop">
+    <meta property:"og:url" content="">
+    <meta property:"og:image" content="images/hero-phone.webp">
+    <title>CellFix Pro</title>
+
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo" href="index.html" aria-label="CellFix Pro Home">
+                <span class="logo-icon" aria-hidden="true">📱</span>
+                <span>CellFix Pro</span>
+            </a>
+
+            <button class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+
+            <nav
+                class="primary-navigation"
+                id="primary-navigation"
+                aria-label="Primary navigation">
+
+                <ul>
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="booking.html">Book Repair</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="header-phone" href="#" aria-label="Call CellFix Pro">☎<span>Call Us</span></a>
+        </div>
+    </header>  
+
+
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Professional Cellphone Repair</p>
+                <h1 id="hero-title">
+                    Fast. Reliable.<br>
+                    <span>Affordable.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Get your phone working like new again with professional cellphone repair services you can trust.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="booking.html">Book Repair</a>
+                    <a class="button button-secondary" href="services.html">View Services</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero-phone.webp" alt="Smartphone ready for professional repair" width="600" height="600">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section-container" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">About CellFix Pro</p>
+                <h2 id="about-title">Your trusted phone repair partner</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    At CellFix Pro, we help customers get back to what matters most.
+                    Our technicians provide professional repairs for 
+                    common smartphone problems using reliable repair solutions.
+                </p>
+                
+                <p>
+                    From cracked screens and weak batteries to charging problems and water damage, 
+                    our goal is to provide a convenient repair experience at a fair price.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-us section-container section-light" aria-describedby="why-title">
+            <div class="section-heading centered">
+                <p class="eyebrow">Why Choose Us</p>
+                <h2 id="why-title">Repair service you can count on</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">⚡</div>
+                    <h3>Fast Service</h3>
+                    <p>We work efficiently to help minimize the time you spend without your device.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🛠</div>
+                    <h3>Experienced Technicians</h3>
+                    <p>Our repair process focuses on careful diagnostics and dependable workmanship.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">💰</div>
+                    <h3>Fair Prices</h3>
+                    <p>We provide practical repair options with transparent estimated pricing.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="featured-services section-container" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <p class="eyebrow">Popular Repairs</p>
+                <h2 id="featured-title">Featured repair services.</h2>
+                <p>Explore some of our most requested cellphone repair services.</p>
+            </div>
+
+            <div class="featured-grid">
+                <article class="service-preview-card">
+                    <div class="service-preview-image">
+                        <img src="images/screen-repair.webp" alt="Cracked smartphone screen" width="400" height="300" loading="lazy">
+                    </div>
+
+                    <div class="service-preview-content">
+                        <p class="service-category">Screen Repairs</p>
+                        <h3>Screen Replacement</h3>
+                        <p>Replace cracked, damaged, or unresponsive smartphone screens.</p>
+                        <a href="services.html">View Service <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="service-preview-card">
+                    <div class="service-preview-image">
+                        <img src="images/battery-repair.webp" alt="Smartphone battery replacement" width="400" height="300" loading="lazy">
+                    </div>
+
+                    <div class="service-preview-content">
+                        <p class="service-category">Battery Repairs</p>
+                        <h3>Battery Replacement</h3>
+                        <p>Restore battery performance when your phone no longer holds a reliable charge.</p>
+                        <a href="services.html">View Service<span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="service-preview-card">
+                    <div class="service-preview-image">
+                        <img src="images/charging-port.webp" alt="Smartphone charging port repair" width="400" height="300" loading="lazy">]\=]\b             jxzzcx
+                    </div>
+
+                    <div class="service-preview-content">
+                        <p class="service-category">Hardware Repairs</p>
+                        <h3>Charging Port Repair</h3>
+                        <p>Fix charging problems caused by damaged or malfunctioning charging ports.</p>
+                        <a href="services.html">View Service <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-action">
+                <a class="button button-primary" href="services.html">View All Services</a>
+            </div>
+        </section>
+
+        <!-- Repair Process -->
+        <section class="repair-process section-light" aria-labelledby="process-title">
+            <div class="section-heading centered">
+                <p class="eyebrow">Simple Repair Process</p>
+                <h2 id="process-title">How it works</h2>
+            </div>
+
+            <ol class="process-grid">
+                <li class="process-step">
+                    <span class="process-number">01</span>
+                    <div>
+                        <h3>Book</h3>
+                        <p>Submit a repair request with your device information.</p>
+                    </div>
+                </li>
+
+                <li class="process-step">
+                    <span class="process-number">02</span>
+                    <div>
+                        <h3>Bring</h3>
+                        <p>Bring your device to the repair location at your scheduled time.</p>
+                    </div>
+                </li>
+
+                <li class="process-step">
+                    <span class="process-number">03</span>
+                    <div>
+                        <h3>Repair</h3>
+                        <p>Our technicians diagnose and repair your device.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonial section-container" aria-labelledby="testimonial-title">
+            <div class="section-heading centered">
+                <p class="eyebrow">Customer Feedback</p>
+                <h2 id="testimonial-title">What our customers say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <div class="rating" aria-label="5 out of 5 starts">★★★★★</div>
+
+                    <blockquote>"The repair was quick and my phone looked great afterward. The process was smooth from start to finish."</blockquote>
+                    <p class="customer-name">- Mayko J.</p>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="rating" aria-label="5 out of 5 start">★★★★★</div>
+
+                    <blockquote>"I needed a battery replacement and received helpful service at a reasonable price."</blockquote>
+                    <p class="customer-name">- Marts B.</p>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+
+                    <blockquote>"Friendly service and clear communication. I would recommend CellFix Pro."</blockquote>
+                    <p class="customer-name">- Nell A.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="section-container cta-content">
+                <div>
+                    <p class="eyebrow">Need a Repair?</p>
+                    <h2 id="cta-title">Get your phone working again.</h2>
+                    <p>Request a repair appointment and let our technicians take care of the problem.</p>
+                </div>
+
+                <a class="button button-light" href="booking.html">Book Your Repair</a>
+            </div>
+        </section>
+
+        <!-- Business Information -->
+        <section class="business-info section-container" aria-labelledby="business-title">
+            <div class="business-hours">
+                <p class="eyebrow">Visit Us</p>
+                <h2 id="business-title">Business Hours</h2>
+
+                <dl>
+                    <div>
+                        <dt>Monday - Saturday</dt>
+                        <dd>9:00 AM - 6:00 PM</dd>
+                    </div>
+
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>Closed</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="contact-info">
+                <p class="eyebrow">Get In Touch</p>
+                <h2>Contact CellFix Pro</h2>
+
+                <address>
+                    <p><strong>Phone:</strong><a href="tel:+15555555555">(555) 555-5555</a></p>
+                    <p><strong>Email:</strong><a href="mailto:infor@cellfixpro.com">info@cellfixpro.com</a></p>    
+                </address>
+            </div>
+        </section> 
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true">📱</span>CellFix Pro</a>
+                <p>Fast. Reliable. Affordable Cellphone Repairs</p>
+            </div>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Book Repair</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-demo">
+                <h2>Project Demo</h2>
+                <p>View the JavaScript Functionality demonstration.</p>
+                <a href="#" aria-label="Watch CellFix Pro project demonstration">Video Demonstration</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>CellFix Pro. All rights reserved.</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="script/main.js"></script>
+    <script type="module" src="script/navigation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+/*********** Tablet - 768px ***********/
+@media screen and (min-width: 48rem) {
+    .section-container {
+        padding-block: 5rem;
+    }
+
+    /* Header */
+    .header-container {
+        min-width: 5rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-navigation {
+        position: static;
+        display: block;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .primary-navigation ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .header-phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        color: var(--primary-dark);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        min-height: 550px;
+        padding-block: 4rem;
+    }
+
+    .hero-actions {
+        flex-direction: row;
+    }
+
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    /* Features */
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Featured Services */
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Process */
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Business */
+    .business-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* CTA */
+    .cta-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /********* services **********/
+    .service-controls {
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+        padding: 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    .service-card-content {
+        padding: 1.5rem;
+    }
+
+    /********* BOOKING PAGE **********/
+    .booking-favorite-card {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .booking-favorite-card image {
+        height: 90px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+    
+    .footer-bottom {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    
+    .footer-bottom p:last-child {
+        text-align: right;
+    }
+}
+
+/********* FORM RESULT *********/
+.result-card {
+    padding: 2rem;
+}
+
+.result-group dl> div {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+}
+
+.result-group dt {
+    font-weight: 700;
+}
+
+.result-group dd {
+    text-align: left;
+}
+
+/********** Desktop - 1024px **********/
+@media screen and (min-width: 64rem) {
+    .header-container {
+        gap: 2rem;
+    }
+
+    .primary-navigation {
+        margin-left: auto;
+    }
+
+    .primary-navigation ul {
+        gap: 1rem;
+    }
+
+    .primary-navigation a {
+        padding-inline: 1rem;
+    }
+
+    /* Featured Services */
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 650px;
+    }
+
+    /********* services **********/
+    .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Large Desktop - 1440px  */
+@media screen and (min-width: 90rem) {
+    body {
+        font-size: 1.05rem;
+    }
+
+    .section-container {
+        padding-block: 6rem;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    /********* services **********/
+    .services-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .service-controls {
+        padding: 1.75rem;
+    }
+}

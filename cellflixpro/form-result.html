@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your CellFix Pro cellphone repair request submission.">
+    <meta name="author" content="Daniel Tanglao">
+    
+    <meta property="og:description" content="Review your CellFix Pro repair request details.">
+    <meta property="og:url" content="">
+    <title>Repair Request Submitted | CellFix Pro</title>
+
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/forms.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo" href="index.html" aria-label="CellFix Pro Home">
+                <span class="logo-icon" aria-hidden="true">📱</span>
+                <span>CellFix Pro</span>
+            </a>
+    
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+    
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+    
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="booking.html">Book Repair</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <a class="header-phone" href="#" aria-label="Call CellFix Pro">☎<span>Call Us</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="result-section section-container" aria-labelledby="result-title">
+            <div class="result-header">
+                <p class="eyebrow">Request Received</p>
+                <h1 id="result-title">Repair Request Summary</h1>
+                <p>Thank you for contacting CellFix Pro. Please review the information below.</p>
+            </div>
+
+            <div id="form-result" class="form-result" aria-live="polite">Loading your submitted information...</div>
+
+            <div class="result-actions">
+                <a class="button button-primary" href="index.html">Return Home</a>
+                <a class="button button-secondary" href="services.html">View Services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <span class="logo-icon" aria-hidden="true">📱</span>CellFix Pro
+                </a>
+                <p>Fast. Reliable. Affordable Cellphone Repairs</p>
+            </div>
+    
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Book Repair</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-demo">
+                <h2>Project Demo</h2>
+                <p>View the JavaScript Functionality demonstration.</p>
+                <a href="#" aria-label="Watch CellFix Pro project demonstration">Video Demonstration</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>CellFix Pro. All rights reserved.</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="script/form.js"></script>
+
+</body>
+</html>

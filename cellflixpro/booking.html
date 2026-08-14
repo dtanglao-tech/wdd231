@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a cellphone repair appointment with CellFix Pro. Submit your device information and preferred appointment date.">
+    <meta name="author" content="Daniel Tanglao">
+    
+    <meta property="og:title" content="Book a Repair | CellFix Pro">
+    <meta property="og:description" content="Request a cellphone repair appointment with CellFix Pro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="hhttps://dtanglao-tech.github.io/wdd231/finalproject/booking.html">
+    <meta property="og:image" content="images/hero-phone.webp">
+
+    <title>Book a Repair | CellFix Pro</title>
+
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo" href="index.html" aria-label="CellFix Pro Home">
+                <span class="logo-icon" aria-hidden="true">📱</span>
+                <span>CellFix Pro</span>
+            </a>
+    
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+    
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+    
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="booking.html" class="active" aria-current="page">Book Repair</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <a class="header-phone" href="#" aria-label="Call CellFix Pro">☎<span>Call Us</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" aria-labelledby="booking-title">
+            <div class="section-container">
+                <p class="eyebrow">Schedule Your Repair</p>
+                <h1 id="booking-title">Book a Repair</h1>
+                <p>
+                    Tell us about your device and the problem you're experiencing. 
+                    We'll use the information to prepare for your repair appointment.
+                </p>
+            </div>
+        </section>
+
+        <section class="booking-layout section-container" aria-labelledby="booking-form-title">
+            <div class="booking-form-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Repair Request</p>
+                    <h2 id="booking-form-title">Appointment Information</h2>
+                    <p>Fields marked with<span aria-hidden="true">*</span>are required</p>
+                </div>
+
+                <form id="booking-form" action="form-result.html" method="get">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <div class="form-group">
+                            <label for="full-name"> Full Name <span aria-hidden="true">*</span></label>
+
+                            <input type="text" id="full-name" name="fullName" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"> Email <span aria-hidden="true">*</span></label>
+
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number<span aria-hidden="true">*</span></label>
+
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Device Information</legend>
+
+                        <div class="form-group">
+                            <label for="device-brand">Device Brand<span aria-hidden="true">*</span></label>
+
+                            <select name="deviceBrand" id="device-brand" required>
+                                <option value="">Select a Brand</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Google">Google</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                                <option value="Huawei">Huawei</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="device-model">Device Model<span aria-hidden="true">*</span></label>
+
+                            <input type="text" id="device-model" name="deviceModel" placeholder="Example: iPhone 15" autocomplete="off" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repair-needed">Repair Needed<span aria-hidden="true">*</span></label>
+
+                            <select name="repairNeeded" id="repair-needed" required>
+                                <option value="">Select a Repair</option>
+                                <option value="Screen Replacement">Screen Replacement</option>
+                                <option value="Battery Replacement">Battery Replacement</option>
+                                <option value="Charging Port Repair">Charging Port Repair</option>
+                                <option value="Camera Repair">Camera Repair</option>
+                                <option value="Water Damage Repair">Water Damage Repair</option>
+                                <option value="Software Troubleshooting">Software Troubleshooting</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Appointment Details</legend>
+                        
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Appointment Date<span aria-hidden="true">*</span></label>
+
+                            <input type="date" id="appointment-date" name="appointmentDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+
+                            <textarea name="notes" id="notes" rows="5" maxlength="500" placeholder="Tell us anything else we should know about your device."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button class="button button-primary form-submit" type="submit">Submit Repair Request</button>
+                </form>
+            </div>
+
+            <aside class="booking-sidebar" aria-labelledby="favorites-title">
+                <div class="favorite-summary">
+                    <p class="eyebrow">Saved Services</p>
+
+                    <h2 id="favorites-title">Your Favorites</h2>
+                    <p>Services you save on the Services page will appear here.</p>
+                    
+                    <div id="booking-favorites" class="booking-favorites">
+                        <p>No favorite services saved yet.</p>
+                    </div>
+                    
+                    <a class="button button-secondary" href="services.html">Browse Services</a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Repair Process -->
+        <section class="repair-process section-light" aria-labelledby="process-title">
+            <div class="section-container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">What Happens Next</p>
+                    <h2 id="process-title">Our Repair Process</h2>
+                </div>
+
+                <ol class="process-grid">
+                    <li class="process-step">
+                        <span class="process-number">01</span>
+
+                        <div>
+                            <h3>Submit Request</h3>
+                            <p>Provide your contact and device information using the booking form.</p>
+                        </div>
+                    </li>
+
+                    <li class="process-step">
+                        <span class="process-number">02</span>
+
+                        <div>
+                            <h3>Device Assessment</h3>
+                            <p>Our technicians review the reported problem and assess the device.</p>
+                        </div>
+                    </li>
+
+                    <li class="process-step">
+                        <span class="process-number">03</span>
+
+                        <div>
+                            <h3>Professional Repair</h3>
+                            <p>We perform the appropriate repair and keep you informed throughout the process.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section section-container" aria-labelledby="faq-title">
+            <div class="section-heading">
+                <p class="eyebrow">Need Help?</p>
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <details>
+                    <summary>How long does a typical repair take?</summary>
+                    <p>Repair time depends on the service and device. Many common repairs can be completed within the same day.</p>
+                </details>
+
+                <details>
+                    <summary>Do I need an appointment?</summary>
+                    <p>Appointments are recommended so we can prepare for your repair, but availability may vary.</p>
+                </details>
+
+                <details>
+                    <summary>Do you repair water-damage phones?</summary>
+                    <p>We offer damage assessment and repair services. Results depend on the extent of the internal damage.</p>
+                </details>
+
+                <details>
+                    <summary>How much will my repair cost?</summary>
+                    <p>Prices vary by device and repair type. Visit our Services page for estimated pricing.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Contact or (copy the same business info form index) -->
+        <section class="contact-section section-light" aria-labelledby="contact-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Visit CellFix Pro</p>
+                    <h2 id="contact-title">Contact Information</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <address>
+                            <p><strong>Phone</strong><br><a href="#">(555) 555-5555</a></p>
+                            <p><strong>Email</strong><br><a href="mailto:info@cellfixpro.com">info@cellfixpro.com</a></p>
+                            <p><strong>Hours</strong><br>Monday-Saturday: 9:00 AM-6:00 PM<br>Sunday: Closed</p>
+                        </address>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            title="CellFix Pro location map" 
+                            src="https://www.google.com/maps?q=Manila%2C%20Philippines&output=embed" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <span class="logo-icon" aria-hidden="true">📱</span>CellFix Pro
+                </a>
+                <p>Fast. Reliable. Affordable Cellphone Repairs</p>
+            </div>
+    
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Book Repair</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-demo">
+                <h2>Project Demo</h2>
+                <p>View the JavaScript Functionality demonstration.</p>
+                <a href="#" aria-label="Watch CellFix Pro project demonstration">Video Demonstration</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>CellFix Pro. All rights reserved.</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="script/booking.js"></script>
+    <script type="module" src="script/main.js"></script>
+
+</body>
+</html> 

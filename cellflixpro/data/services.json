@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Screen Repair",
+        "category": "Screen Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$89–$199",
+        "description": "Replace cracked, shattered, or unresponsive smartphone screens with a professional replacement.",
+        "image": "images/services/screen-repair.webp"
+    },
+    {
+        "id": 2,
+        "name": "Battery Replacement",
+        "category": "Battery Repairs",
+        "repairTime": "45–90 minutes",
+        "price": "$59–$129",
+        "description": "Replace worn-out batteries to restore reliable battery life and everyday performance.",
+        "image": "images/services/battery-repair.webp"
+    },
+    {
+        "id": 3,
+        "name": "Charging Port Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$69–$149",
+        "description": "Repair charging problems caused by damaged, loose, or malfunctioning charging ports.",
+        "image": "images/services/charging-port.webp"
+    },
+    {
+        "id": 4,
+        "name": "Camera Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$79–$159",
+        "description": "Restore front or rear camera functionality when your phone camera is damaged or malfunctioning.",
+        "image": "images/services/camera-repair.webp"
+    },
+    {
+        "id": 5,
+        "name": "Speaker Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$59–$119",
+        "description": "Fix distorted, quiet, or non-working smartphone speakers.",
+        "image": "images/services/speaker-repair.webp"
+    },
+    {
+        "id": 6,
+        "name": "Water Damage Repair",
+        "category": "Water Damage",
+        "repairTime": "2–4 hours",
+        "price": "$79–$249",
+        "description": "Assess and repair devices affected by accidental water or liquid exposure.",
+        "image": "images/services/water-damage.webp"
+    },
+    {
+        "id": 7,
+        "name": "Software Troubleshooting",
+        "category": "Software Repairs",
+        "repairTime": "30–90 minutes",
+        "price": "$39–$89",
+        "description": "Diagnose software problems including crashes, freezing, update issues, and performance problems.",
+        "image": "images/services/software-repair.webp"
+    },
+    {
+        "id": 8,
+        "name": "Back Glass Replacement",
+        "category": "Hardware Repairs",
+        "repairTime": "2–3 hours",
+        "price": "$99–$229",
+        "description": "Replace cracked or shattered rear glass panels on supported smartphone models.",
+        "image": "images/services/back-glass.webp"
+    },
+    {
+        "id": 9,
+        "name": "Power Button Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$59–$129",
+        "description": "Repair or replace malfunctioning power buttons that make turning your phone on or off difficult.",
+        "image": "images/services/power-button.webp"
+    },
+    {
+        "id": 10,
+        "name": "Face ID Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "2–4 hours",
+        "price": "$99–$249",
+        "description": "Diagnose supported facial recognition hardware problems and restore functionality when possible.",
+        "image": "images/services/face-id.webp"
+    },
+    {
+        "id": 11,
+        "name": "LCD Replacement",
+        "category": "Screen Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$79–$179",
+        "description": "Replace damaged LCD displays showing lines, dark areas, flickering, or other display problems.",
+        "image": "images/services/lcd-repair.webp"
+    },
+    {
+        "id": 12,
+        "name": "Microphone Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$59–$119",
+        "description": "Repair microphone problems affecting calls, voice recordings, or audio applications.",
+        "image": "images/services/microphone-repair.webp"
+    },
+    {
+        "id": 13,
+        "name": "SIM Reader Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–3 hours",
+        "price": "$69–$149",
+        "description": "Diagnose and repair problems preventing a device from detecting or reading a SIM card.",
+        "image": "images/services/sim-reader.webp"
+    },
+    {
+        "id": 14,
+        "name": "Motherboard Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "2–5 hours",
+        "price": "$149–$399",
+        "description": "Advanced diagnostic and board-level repair for supported devices with serious hardware faults.",
+        "image": "images/services/motherboard.webp"
+    },
+    {
+        "id": 15,
+        "name": "Data Recovery",
+        "category": "Software Repairs",
+        "repairTime": "2–6 hours",
+        "price": "$99–$299",
+        "description": "Attempt to recover important photos, documents, contacts, and other data from supported devices.",
+        "image": "images/services/data-recovery.webp"
+    },
+    {
+        "id": 16,
+        "name": "Vibration Motor Repair",
+        "category": "Hardware Repairs",
+        "repairTime": "1–2 hours",
+        "price": "$49–$99",
+        "description": "Repair malfunctioning vibration motors when your device no longer provides haptic feedback.",
+        "image": "images/services/vibration-repair.webp"
+    }
+]

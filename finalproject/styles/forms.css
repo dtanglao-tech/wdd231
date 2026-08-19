@@ -133,3 +133,304 @@ BOOKING
     color: var(--text-light);
     font-size: 0.9rem;
 }
+
+/* Booking layout */
+.booking-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Booking Form */
+.booking-form-container {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+}
+
+.booking-form-container .section-heading {
+    margin-bottom: 2rem;
+}
+
+/* Form */
+.booking-form-container form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.booking-form-container fieldset {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-small);
+    padding: 1.25rem;
+    margin: 0;
+}
+
+.booking-form-container legend {
+    padding-inline: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.booking-group {
+    display: grid;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.font-group label span {
+    color: var(--error);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-small);
+    background-color: var(--surface);
+    color: var(--light);
+    font: inherit;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 3px solid rgb(37 99 235 / 25%);
+    border-color: var(--primary);
+}
+
+.form-submit {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+/* =========================================
+        FAVORITES SIDEBAR 
+=========================================*/
+.booking-sidebar {
+    align-self: start;
+}
+
+.favorite-summary {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.favorite-summary h2 {
+    margin-bottom: 0.5rem;
+}
+
+.favorite-summary > p:not(.eyebrow) {
+    color: var(--text-light);
+}
+
+.booking-favorites {
+    margin-block: 1.25rem;
+}
+
+.booking-favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.booking-favorite-item:last-child {
+    border-bottom: 0
+}
+
+.booking-favorite-item strong {
+    color: var(--secondary);
+}
+
+.booking-favorite-item span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.booking-summary .button {
+    width: 100%;
+    text-align: center;
+}
+
+/********** Repair Process **********/
+.repair-process {
+    margin-top: 2rem;
+}
+
+.process-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.process-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1.25rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.process-number {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--surface);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.process-step h3 {
+    margin-bottom: 0.35rem;
+}
+
+.process-step p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+/********** FAQ **********/
+.faq-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.faq-list summary {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.faq-list details[open] summary {
+    margin-bottom: .75rem;
+}
+
+.faq-list details p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/********** CONTACT SECTION **********/
+.contact-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.contact-details {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.contact-details address {
+    font-style: normal;
+}
+
+.contact-details p {
+    margin-bottom: 1.25rem;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-details strong {
+    color: var(--secondary);
+}
+
+.contact-details a {
+    color: var(--primary-dark);
+    font-weight: 500;
+}
+
+.map-container {
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    border: 0;
+}
+
+/********** Booking page hero **********/
+.page-hero {
+    background-color: var(--secondary);
+    color: var(--surface);
+    padding: 2.5rem 1rem;
+}
+
+.page-hero h1 {
+    color: var(--surface);
+}
+
+.page-hero p:last-child {
+    max-width: 650px;
+    color: var(--surface);
+}
+
+/********** BUTTONS **********/
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-small);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform var(--transition),
+                background-color var(--transition)
+                box-shadow var(--transition);
+}
+
+.button:hover {
+    transform: translateY(-2x);
+}
+

@@ -1,3 +1,4 @@
+
 /*********** Tablet - 768px ***********/
 @media screen and (min-width: 48rem) {
     .section-container {
@@ -64,11 +65,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Process */
-    .process-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     /* Business */
     .business-info {
         grid-template-columns: 1fr 1fr;
@@ -98,12 +94,52 @@
     }
 
     /********* BOOKING PAGE **********/
+    .booking-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .booking-form-container {
+        padding: 2rem;
+    }
+
+    .booking-form-container fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1.5rem;
+    }
+
+    .booking-form-container legend {
+        grid-column: 1 / -1;
+    }
+
+    .booking-form-container fieldset .form-group {
+        margin-bottom: 0;
+    }
+
     .booking-favorite-card {
         grid-template-columns: 120px 1fr;
     }
 
     .booking-favorite-card image {
         height: 90px;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 0.8fr 1.2fr;
+        align-items: stretch;
+    }
+
+    .map-container,
+    .map-container iframe {
+        min-height: 100%;
+    }
+
+    /* Process */
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* Footer */

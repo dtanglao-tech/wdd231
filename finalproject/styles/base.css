@@ -765,7 +765,7 @@ p {
 }
 
 .footer-brand .logo {
-    margin-bottom: 0.75;
+    margin-bottom: 0.75rem;
     color: var(--surface);
 }
 

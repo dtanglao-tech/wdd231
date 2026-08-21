@@ -169,10 +169,6 @@
     gap: 1rem;
 }
 
-.result-group dt {
-    font-weight: 700;
-}
-
 .result-group dd {
     text-align: left;
 }

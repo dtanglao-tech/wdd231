@@ -252,10 +252,6 @@ BOOKING
     color: var(--text-light);
 }
 
-.booking-favorites {
-    margin-block: 1.25rem;
-}
-
 .booking-favorite-item {
     display: flex;
     align-items: center;

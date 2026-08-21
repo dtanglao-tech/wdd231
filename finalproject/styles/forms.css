@@ -431,6 +431,6 @@ BOOKING
 }
 
 .button:hover {
-    transform: translateY(-2x);
+    transform: translateY(-2px);
 }
 

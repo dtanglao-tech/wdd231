@@ -155,22 +155,22 @@
     .footer-bottom p:last-child {
         text-align: right;
     }
-}
-
-/********* FORM RESULT *********/
-.result-card {
-    padding: 2rem;
-}
-
-.result-group dl> div {
-    display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
-    align-items: start;
-    gap: 1rem;
-}
-
-.result-group dd {
-    text-align: left;
+    
+    /********* FORM RESULT *********/
+    .result-card {
+        padding: 2rem;
+    }
+    
+    .result-group dl> div {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    .result-group dd {
+        text-align: left;
+    }
 }
 
 /********** Desktop - 1024px **********/
